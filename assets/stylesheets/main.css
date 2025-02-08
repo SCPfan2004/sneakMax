@@ -92,9 +92,11 @@
     width: 25px;
     height: 3px;
     background-color: var(--color-white);
-    position: relative;
+    position: absolute;
     transition: 0.2s ease-out;
-    z-index: 101;
+    z-index: 102;
+
+    left: 70%;
 }
 
 .nav-mobile-btn-label::before {

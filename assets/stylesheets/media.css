@@ -30,6 +30,7 @@
 
     #nav-mobile:checked ~ .nav-mobile-btn-label {
         width: 0px;
+        left: 50%;
     }
 
     #nav-mobile:checked ~ .nav-mobile-btn-label::before {
