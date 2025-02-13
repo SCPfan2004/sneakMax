@@ -1,0 +1,116 @@
+@media (max-width: 500px) {
+    :root {
+        --big-offset: 41px;
+        --second-offset: 14px;
+    }
+}
+
+
+
+
+
+
+/* ------------ HEADER ------------------------------------------------------------------------- */
+@media (max-width: 1099px) {
+    .header__right {
+        gap: var(--second-offset);
+    }
+
+    .nav-mobile-btn-label {
+        display: block;
+    }
+
+    .header__nav {
+        transform: translateX(-100%);
+    }
+
+    #nav-mobile:checked ~ .header__nav {
+        transform: translateX(0);
+    }
+
+    #nav-mobile:checked ~ .nav-mobile-btn-label {
+        width: 0px;
+    }
+
+    #nav-mobile:checked ~ .nav-mobile-btn-label::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    #nav-mobile:checked ~ .nav-mobile-btn-label::after {
+        bottom: 0;
+        transform: rotate(-45deg);
+    }
+
+    #nav-mobile:checked ~ .gray-mask {
+        opacity: 1;
+        z-index: 100;
+        transform: translateX(0);
+    }
+
+    .header__nav {
+        position: fixed;
+        background-color: var(--color-purple);
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .header__nav .nav__list {
+        display: block;
+        margin-top: var(--big-offset);
+        margin-left: var(--big-offset);
+    }
+
+    .header__nav .nav__item {
+        margin-bottom: var(--main-offset);
+    }
+
+    .header__nav .nav__link {
+        font: var(--font-price);
+    }
+}
+
+@media (max-width: 500px) {
+    .header__nav {
+        width: 70%;
+    }
+
+    .cart__text {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ------------ HERO ------------------------------------------------------------------------- */
+@media (max-width: 1099px) {
+    .hero__title {
+        grid-column: span 10;
+    }
+
+    .hero__subtitle {
+        grid-column: span 10;
+    }
+}
+
+@media (max-width: 870px) {
+    .hero__bg-text {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero__container {
+        padding-top: 100px;
+        padding-bottom: 75px;
+    }
+}
